@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.bundle.css' %}">
+    <link rel="icon" href="{% static 'image/favicon.png' %}" type="image/png" sizes="16x16">
+    <!-- VUE -->
+    {% comment %} <link rel="stylesheet" href="{% static 'bundle/bundle.css' %}"> {% endcomment %}
+    <title>{% block title %} Sersoluciones {% endblock %}</title>
+    {% block styles %}{% endblock %}
+    {% block head_scripts %}{% endblock %}
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="70">
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
+	<!--  -->
+
+    <!-- header -->
+	<header>
+		<!-- navbar -->
+		<nav id="navbar" class="navbar navbar-custom navbar-fixed-top" data-spy="affix" data-offset-top="70">
+			<div class="container">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand page-scroll logo-light" href="index.html"><img alt="" src="{% static 'image/logo-clr.png' %}"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img alt="" src="{% static 'image/logo-clr.png' %}"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div class="right-nav text-right">
+							<ul class="nav navbar-nav menu">
+								<li class="dropdown">
+									<a href="#">Demos</a>
+									 <ul class="dropdown-menu">
+										<li><a href="index.html">Home 1</a></li>
+										<li><a href="index-s2.html">Home 2</a></li>
+										<li><a href="index-s3.html">Home 3</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#feature">Feature</a>
+								</li>
+								<li>
+									<a href="#overview">Overview</a>
+								</li>
+								<li>
+									<a href="#step">Working Step</a>
+								</li>
+
+								<li>
+									<a href="#pricing">Pricing</a>
+								</li>
+							</ul>
+							<div class="nav-btn">
+								<a href="#" class="btn grdnt-orange">Get It Now</a>
+							</div>
+						</div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</nav>
+		<!-- End navbar -->
+
+		<!-- banner -->
+		<div class="hero bg-shape">
+			<div class="hero-content">
+				<div class="container">
+					<div class="row">
+						<div class="row">
+							<div class="col-sm-5">
+								<div class="intro-text grad-orange">
+									<div class="meta-head clip-txt">Introducing Xappox</div>
+									<h2>Make the world's software more accessible</h2>
+									<div class="spce"></div>
+									<p class="large">A gorgeous new interface keeps your canvas the focus while giving you all the power.</p>
+									<div class="btn-holder">
+										<a href="#" class="btn grdnt-orange">Download Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-7">
+								<div class="text-right img-pre">
+									<img alt="" src="{% static 'image/img-1.png' %}">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- End Banner -->
+	</header>
+	<!-- End header -->
+
+    {% block content %}{% endblock %}
+
+    <!-- subscribe -->
+	<div class="sec-pad grdnt-orange bg-trans-4 light">
+		<div class="container">
+			<div class="row">
+				<div class="row res-center-sm wow animated fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+					<div class="col-sm-6">
+						<h4>Subscribe for latest email</h4>
+					</div>
+					<div class="col-sm-6">
+						<div class="sub-input subscribe custom-form">
+							<form class="mailchimp custom-form inline">
+								<div class="form-group">
+									<input type="email" name="subscribe" id="subscriber-email" placeholder="Enter your Email" class="form-control">
+								</div>
+								<button type="submit" id="subscribe-button" class="btn btn-white">Subscribe</button>
+							</form>
+							<div class="text-center light result-box">
+								<h5 class="subscription-success"> </h5>
+						        <h5 class="subscription-error"> </h5>
+						        <label class="subscription-label" for="subscriber-email"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end subscribe -->
+    <!--Footer  -->
+	<footer class="footer-wrapper bg-gray pb-0  sec-pad">
+		<div class="container footer-content">
+			<div class="row">
+				<div class="row footer-widget">
+					<div class="col-md-3 col-sm-6 res-margin">
+						<a class="navbar-brand" href="index.html"><img alt="" src="{% static 'image/logo-clr.png' %}"></a>
+						<div class="spce"></div>
+						<p>Focus on what matters—building a great user experience. Use your native visualization components.</p>
+					</div>
+					<div class="col-md-2 col-sm-6 col-md-offset-1 res-margin">
+						<h6>Product</h6>
+						<div class="spce"></div>
+						<ul>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Stories</a></li>
+							<li><a href="#">Pricing</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 res-margin">
+						<h6>Support</h6>
+						<div class="spce"></div>
+						<ul>
+							<li><a href="#">Terms & Condition</a></li>
+							<li><a href="#">API</a></li>
+							<li><a href="#">Customers</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<h6>Follow Us</h6>
+						<div class="spce"></div>
+							<ul>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Pinterest</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="spce md"></div>
+				<div class="spce"></div>
+				<div class="copyright text-center">
+					Copyright © 2020 <strong>Sersoluciones</strong>. 
+				</div>
+			</div>			
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+    <script src="{% static 'js/vendor.bundle.js' %}"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!-- VUE -->
+    {#<script src="{% static 'bundle/bundle.js' %}"></script>#}
+{% block scripts %}{% endblock %}
+</body>
+
+</html>
