@@ -1,0 +1,91 @@
+
+
+/* ==========================================================================
+   13.0 Other Styling
+   ========================================================================== */
+   .steps{
+    position: relative;
+}
+.steps:before{
+    background: rgba(255,255,255,.38);
+    content: '';
+    height: 1px;
+    left: 140px;
+    position: absolute;
+    right: 130px;
+    top: 14px;
+}
+.step-list .number{
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto 20px;
+    width: 30px;
+    color: #fff;
+}
+.tools-item {
+    padding: 0 30px 30px;
+}
+.tools-item img{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 16px 24px -16px rgba(0,0,0,0.5);
+    width: 144px;
+    height: 144px;
+}
+
+/* ==========================================================================
+   14.0 Fixed  Scroll
+   ========================================================================== */
+.fixed-parallax{
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.fixed-parallax .content .item.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 800px;
+}
+.fixed-parallax .content .intro-text{
+    margin-top: 0;
+}
+.fixed-parallax .content{
+   height: 100vh;
+   position: relative;
+}
+.fixed-parallax .content .item{
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform:translateY(-50%);
+    max-width: 800px;
+}
+.fixed-parallax.img-1{
+    background-image: url(/static/image/bg-parallax.jpg);
+}
+.fixed-parallax.img-2{
+    background-image: url(/static/image/bg-parallax-2.jpg);
+}
+.fixed-parallax.img-3{
+    background-image: url(/static/image/bg-parallax-4.jpg);
+}
+.fixed-parallax.img-4{
+    background-image: url(/static/image/bg-parallax-5.jpg);
+}
+.fixed-parallax.img-5{
+    background-image: url(/static/image/bg-parallax-6.jpg);
+}

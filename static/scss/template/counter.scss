@@ -1,0 +1,37 @@
+/* ==========================================================================
+    6.0 Counter Styling
+   ========================================================================== */
+   .count-over{
+    background: #fff;
+    padding: 50px 20px;
+    box-shadow: rgba(24, 32, 79, 0.25) 0px 100px 100px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset;
+    position: relative;
+    margin-top: -100px;
+}
+.count .item{
+       border-radius: 50px;
+}
+.count .item:not([class*="grdnt-"]){
+    background: rgba(0,0,0,.2);
+}
+.count .icon{
+    font-size: 24px;
+    float: left;
+    line-height: 1;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(0,0,0,.1);
+    margin: 10px;
+}
+.count .text{
+    overflow: hidden;
+    margin-top: 10px;
+}
+.count .heading{
+   line-height: 1;
+    font-size: 24px;
+   margin: 0;
+}
+.count p{
+   font-size: 14px;
+}

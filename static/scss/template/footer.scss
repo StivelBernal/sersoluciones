@@ -1,0 +1,37 @@
+/* ==========================================================================
+   15.0 Footer Styling
+   ========================================================================== */
+
+   .footer-wrapper .navbar-brand{
+    display: block;
+    height: auto;
+    padding: 0;
+}
+.footer-wrapper li a, .footer-wrapper p{
+    opacity: .9;
+}
+.footer-wrapper li a:hover{
+    opacity: 1;
+}
+.footer-wrapper .copyright {
+    font-size: .9em;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    opacity: .7;
+}
+.footer-wrapper .subscribe-box{
+    background: rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin-bottom: 60px;
+    padding: 30px 20px;
+    line-height: 0;
+}
+.footer-wrapper .subscribe-box .heading{
+    margin-bottom: 0;
+}
+.footer-wrapper .subscribe-box .form-group{
+    margin-bottom: 0;
+}
+.footer-wrapper .subscribe-box .btn:hover{
+    color: #fff;
+}

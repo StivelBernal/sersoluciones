@@ -1,0 +1,77 @@
+/* ==========================================================================
+   5.0 Banner Styling
+   ========================================================================== */
+   .hero {
+    position: relative;
+    padding-top: 150px;
+}
+.hero.bg-mesh{
+    max-height: 800px;
+}
+.hero.style-curve{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero.bg-shape{
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+.style-wave .img-pre img{
+    min-width: 160%;
+    margin-right: -400px
+}
+.hero.style-wave{
+    padding-top: 150px;
+}
+.hero-content{
+	z-index: 3;
+	position: relative;
+}
+
+.hero .img-pre.right{
+    position: absolute;
+    right: -300px;
+    bottom: 0;
+    max-width: 900px;
+    z-index: 0;
+}
+.hero .meta-head{
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    font-size: 14px;
+}
+
+.intro-text {
+    margin-top: 100px;
+    z-index: 4;
+	position: relative;
+}
+
+.hero-single {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.hero-single .intro-text{
+    padding-top: 70px;
+    max-width: 600px;
+    margin:0 auto;
+}
+.hero .hero-content.intro-center {
+    position: static;
+    padding-top: 150px
+}
+
+.hero-content .sub-input .btn {
+    right: 8px
+}
+
+.hero-content .intro-text .intro-heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 60px
+}

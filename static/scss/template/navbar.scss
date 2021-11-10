@@ -1,0 +1,165 @@
+/* ==========================================================================
+    4.0 Navbar Styling
+   ========================================================================== */
+   .navbar-custom {
+    border: none;
+    padding: 35px 0;
+    -webkit-transition: padding .5s;
+    -moz-transition: padding .5s;
+    transition: padding .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent
+}
+
+.navbar-custom .left-nav .nav{
+    margin-left: 30px;
+}
+
+.navbar-custom .container-fluid{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navbar-custom.nav-light ul li a{
+    color: #fff;
+}
+
+.navbar-custom:not(.navbar-fixed-top) {
+    z-index: 10
+}
+
+.navbar-custom.affix {
+    position: fixed
+}
+
+.navbar-custom .right-nav .nav-btn {
+    float: right;
+    margin-left: 20px
+}
+
+.navbar-custom.affix .right-nav .nav-btn .btn.btn-white {
+    border-color: #702dda;
+    color: #702dda
+}
+
+.navbar-custom.affix .right-nav .nav-btn .btn.btn-white:hover {
+    background: #702dda;
+    color: #fff
+}
+
+.navbar-custom .navbar-brand {
+    margin-left: 0 !important;
+    padding: 0;
+    transition: .5s;
+    -webkit-transition: .5s
+}
+
+.navbar-custom.affix .navbar-brand {
+    padding: 0
+}
+
+.navbar-custom .navbar-brand.logo-clr,
+.navbar-custom.affix .navbar-brand.logo-light {
+    opacity: 0;
+    width: 0
+}
+
+.navbar-custom .navbar-brand.logo-light,
+.navbar-custom.affix .navbar-brand.logo-clr {
+    opacity: 1;
+    width: auto;
+    height: auto
+}
+
+
+.navbar-custom .navbar-toggle {
+    border: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-right: 0;
+    padding: 0 0 0 12px;
+    transition: .5s;
+    -webkit-transition: .5s
+}
+
+.navbar-custom .navbar-toggle:hover {
+    background: 0 0;
+    opacity: .7
+}
+
+.navbar-custom.affix .navbar-toggle {
+    color: #37404d
+}
+
+.navbar-custom .navbar-nav > li {
+    margin: 0 15px;
+}
+
+.navbar-custom ul li a {
+    opacity: .9;
+    padding: 10px 3px;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -.007em;
+}
+.navbar-custom .dropdown-menu li a{
+    padding: 10px;
+}
+.navbar-custom.nav-light .dropdown-menu li a{
+    color: inherit;
+}
+.navbar-custom.affix ul li a {
+    color: inherit
+}
+
+.navbar-custom.affix ul li a:hover,
+.navbar-custom.affix ul li.active a {
+    color: #424242
+}
+
+.navbar-custom ul li.active a {
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    opacity: 1;
+}
+
+.navbar-custom ul li a:hover {
+    opacity: 1;
+}
+
+.navbar-custom.affix {
+    padding: 20px 0;
+    border-bottom: 0;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    background: #fff
+}
+
+.navbar-custom .nav-btn .btn {
+    padding: 14px 25px;
+    margin: 0;
+}
+.navbar-custom:not(.affix) .nav-btn .btn{
+	background: #fff;
+	color: #1d1148;
+    box-shadow: rgba(24, 32, 79, 0.25) 0 0 100px;
+}
+.navbar-custom .nav-btn .btn:not([class*="grdnt-"]):hover{
+    background: #120932;
+}
+.navbar-custom .nav-btn .btn.shadow{
+    background: #fff;
+    color: #764fe0;
+    box-shadow: rgba(0, 0, 0, .2) 0px 12px 50px;
+}
+.navbar-custom .nav-btn .btn.shadow:hover{
+    box-shadow: rgba(0, 0, 0, .5) 0px 12px 50px;
+    background: #fff;
+    color: #764fe0;
+}

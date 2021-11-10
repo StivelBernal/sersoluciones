@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from main.views import IndexView, AboutUsView
+from main.views import IndexView, AboutUsView, Spot1View, Spot2View
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view()),
     path('about-us', AboutUsView.as_view()),
-
+    path('spot-trace', Spot1View.as_view()),
+    path('spot-gen3', Spot2View.as_view()),
 ]
