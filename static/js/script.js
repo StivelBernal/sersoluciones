@@ -223,27 +223,31 @@
         t = document.getElementById("switcher"),
         m = document.getElementById("monthly"),
         y = document.getElementById("hourly");
-        e.addEventListener("click", function(){
-          t.checked = false;
-          e.classList.add("toggler--is-active");
-          d.classList.remove("toggler--is-active");
-          m.classList.remove("none");
-          y.classList.add("none");
-        });
-
-        d.addEventListener("click", function(){
-          t.checked = true;
-          d.classList.add("toggler--is-active");
-          e.classList.remove("toggler--is-active");
-          m.classList.add("none");
-          y.classList.remove("none");
-        });
-
-        t.addEventListener("click", function(){
-          d.classList.toggle("toggler--is-active");
-          e.classList.toggle("toggler--is-active");
-          m.classList.toggle("none");
-          y.classList.toggle("none");
-        })
+        if(e) {
+            e.addEventListener("click", function(){
+              t.checked = false;
+              e.classList.add("toggler--is-active");
+              d.classList.remove("toggler--is-active");
+              m.classList.remove("none");
+              y.classList.add("none");
+            });
+        }
+        if(d) {
+            d.addEventListener("click", function(){
+              t.checked = true;
+              d.classList.add("toggler--is-active");
+              e.classList.remove("toggler--is-active");
+              m.classList.add("none");
+              y.classList.remove("none");
+            });
+        }
+        if(t) {
+            t.addEventListener("click", function(){
+              d.classList.toggle("toggler--is-active");
+              e.classList.toggle("toggler--is-active");
+              m.classList.toggle("none");
+              y.classList.toggle("none");
+            })
+        }
 
 })(jQuery); 

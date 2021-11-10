@@ -1,33 +1,33 @@
-@import "./template/template.scss";
+// @import "./template/template.scss";
 
 header .menu-container {
     
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-gap: 0 20px;
+    // display: grid;
+    // grid-template-columns: max-content 1fr;
+    // grid-gap: 0 20px;
 
-    &:before {
-        content: none;
-    }
+    // &:before {
+    //     content: none;
+    // }
     .navbar-brand img {
         height: 70px;
         width: auto;
     }
 
-    .menu-principal {
+    // .menu-principal {
 
-        display: flex !important;
-        justify-content: end;
-        align-items: center;
+    //     display: flex !important;
+    //     justify-content: end;
+    //     align-items: center;
 
-        .right-nav  {
+    //     .right-nav  {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //     }
 
-    }
+    // }
 
 
 
