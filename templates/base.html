@@ -3,12 +3,12 @@
 {% load static %}
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bundle/bundle.css' %}">
     <link rel="stylesheet" href="{% static 'css/vendor.bundle.css' %}">
-    <link rel="icon" href="{% static 'image/favicon.png' %}" type="image/png" sizes="16x16">
+    <link rel="icon" href="{% static '/favicon.png' %}" type="image/png" sizes="16x16">
     <!-- VUE -->
     {% comment %} <link rel="stylesheet" href="{% static 'bundle/bundle.css' %}"> {% endcomment %}
-    <title>{% block title %} Sersoluciones {% endblock %}</title>
+    <title>{% block title %} Ser Soluciones {% endblock %}</title>
     {% block styles %}{% endblock %}
     {% block head_scripts %}{% endblock %}
 </head>
@@ -24,44 +24,50 @@
 		<!-- navbar -->
 		<nav id="navbar" class="navbar navbar-custom navbar-fixed-top" data-spy="affix" data-offset-top="70">
 			<div class="container">
-				<div class="row">
+				<div class="row menu-container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header page-scroll">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<i class="fa fa-bars"></i>
 						</button>
-						<a class="navbar-brand page-scroll logo-light" href="index.html"><img alt="" src="{% static 'image/logo-clr.png' %}"></a>
-						<a class="navbar-brand page-scroll logo-clr" href="index.html"><img alt="" src="{% static 'image/logo-clr.png' %}"></a>
+						<a class="navbar-brand page-scroll logo-light" href="/"><img alt="" src="{% static 'img/Logo-correo.png' %}"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="/"><img alt="" src="{% static 'img/Logo-correo.png' %}"></a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse menu-principal" id="bs-example-navbar-collapse-1">
 						<div class="right-nav text-right">
 							<ul class="nav navbar-nav menu">
 								<li class="dropdown">
-									<a href="#">Demos</a>
+									<a href="#">SERVICIOS</a>
 									 <ul class="dropdown-menu">
-										<li><a href="index.html">Home 1</a></li>
-										<li><a href="index-s2.html">Home 2</a></li>
-										<li><a href="index-s3.html">Home 3</a></li>
+										<li><a href="/">DISEÑO WEB</a></li>
+										<li><a href="/">DISEÑO MOVIL</a></li>
+										<li><a href="/">DOMINIOS</a></li>
+										<li><a href="/">HOSTING</a></li>
+										<li><a href="/">CORREO EMPRESARIAL</a></li>
+										<li><a href="/">POSICIONAMIENTO WEB (SEO)</a></li>
+										<li><a href="/">BASES DE DATOS</a></li>
+										<li><a href="/">VIRTUALIZACIÓN DE SERVIDORES</a></li>
+										<li><a href="/">APLICATIVOS DE ESCRITORIO</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#feature">Feature</a>
+									<a href="/tienda">EQUIPOS SPOT</a>
 								</li>
 								<li>
-									<a href="#overview">Overview</a>
+									<a href="https://sersoluciones.tiendana.com/">TIENDA</a>
 								</li>
 								<li>
-									<a href="#step">Working Step</a>
+									<a href="#step">NOSOTROS</a>
 								</li>
 
 								<li>
-									<a href="#pricing">Pricing</a>
+									<a href="#pricing">PRECIOS</a>
 								</li>
 							</ul>
 							<div class="nav-btn">
-								<a href="#" class="btn grdnt-orange">Get It Now</a>
+								<a href="#" class="btn grdnt-orange">CONTACTO</a>
 							</div>
 						</div>
 					</div>
