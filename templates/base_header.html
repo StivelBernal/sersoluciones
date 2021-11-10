@@ -1,0 +1,70 @@
+{% extends "templates/base.html" %}
+{% load static %}
+{% block header %}
+    <!-- header -->
+	<header>
+		<!-- navbar -->
+		<nav id="navbar" class="navbar navbar-custom navbar-fixed-top" data-spy="affix" data-offset-top="70">
+			<div class="container">
+				<div class="row menu-container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand page-scroll logo-light" href="/"><img alt="" src="{% static 'img/Logo-correo.png' %}"></a>
+						<a class="navbar-brand page-scroll logo-clr" href="/"><img alt="" src="{% static 'img/Logo-correo.png' %}"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-principal" id="bs-example-navbar-collapse-1">
+						<div class="right-nav text-right">
+							<ul class="nav navbar-nav menu">
+								<li class="dropdown">
+									<a href="#">SERVICIOS</a>
+									 <ul class="dropdown-menu">
+										<li><a href="/">DISEÑO WEB</a></li>
+										<li><a href="/">DISEÑO MOVIL</a></li>
+										<li><a href="/">DOMINIOS</a></li>
+										<li><a href="/">HOSTING</a></li>
+										<li><a href="/">CORREO EMPRESARIAL</a></li>
+										<li><a href="/">POSICIONAMIENTO WEB (SEO)</a></li>
+										<li><a href="/">BASES DE DATOS</a></li>
+										<li><a href="/">VIRTUALIZACIÓN DE SERVIDORES</a></li>
+										<li><a href="/">APLICATIVOS DE ESCRITORIO</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="/tienda">EQUIPOS SPOT</a>
+									<ul class="dropdown-menu">
+										<!-- <li><a href="https://sersoluciones.tiendana.com/producto/spot-gen3-gps-portable-equipo-de-rastreo-satelital">SPOT GEN3</a></li> -->
+										<li><a href="/spot-gen3">SPOT GEN3</a></li>
+										<li><a href="/spot-trace">SPOT TRACE</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="https://sersoluciones.tiendana.com/">TIENDA</a>
+								</li>
+								<li>
+									<a href="#step">NOSOTROS</a>
+								</li>
+
+								<li>
+									<a href="#pricing">PRECIOS</a>
+								</li>
+							</ul>
+							<div class="nav-btn">
+								<a href="#" class="btn grdnt-orange">CONTACTO</a>
+							</div>
+						</div>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+			</div>
+		</nav>
+		<!-- End navbar -->
+
+		
+	</header>
+	<!-- End header -->
+{% endblock %}

@@ -9,10 +9,12 @@
 
 
 header .menu-container {
-    
     display: grid;
     grid-template-columns: max-content 1fr;
     grid-gap: 0 20px;
+    @media(max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 
     &:before {
         content: none;
@@ -22,19 +24,20 @@ header .menu-container {
         width: auto;
     }
 
-    .menu-principal {
-
-        display: flex !important;
-        justify-content: end;
-        align-items: center;
-
-        .right-nav  {
-
+    @media(min-width: 767px) {
+        .menu-principal {
             display: flex;
-            justify-content: center;
+            justify-content: end;
             align-items: center;
+            
+            .right-nav  {
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
         }
-
     }
 
 }
